@@ -192,7 +192,7 @@ const AIChat = () => {
             {quickPrompts.map((prompt, i) => (
               <button
                 key={i}
-                onClick={() => { setInput(prompt); }}
+                onClick={() => { setInput(prompt); setTimeout(() => inputRef.current?.focus(), 100); }}
                 className="rounded-full bg-white border border-gray-200 hover:border-[#00C853] hover:bg-emerald-50 px-4 py-2 text-sm text-gray-600 transition-colors"
                 data-testid={`quick-prompt-${i}`}
               >
