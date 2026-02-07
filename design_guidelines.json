@@ -1,0 +1,142 @@
+{
+  "brand_identity": {
+    "name": "CareLens AI",
+    "tone": "Vibrant, Life-Affirming, Trustworthy, Hyper-Local",
+    "mission": "Democratizing healthcare access for Rural India with the speed of Rapido and the trust of a family doctor.",
+    "target_audience": "Rural Indian population, mobile-first users, semi-literate users, local doctors.",
+    "visual_theme": "Modern Indian Tech",
+    "mode": "light",
+    "emotional_archetype": "The Energetic Caregiver"
+  },
+  "typography": {
+    "font_family_heading": "\"Outfit\", sans-serif",
+    "font_family_body": "\"Manrope\", sans-serif",
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed",
+      "caption": "text-sm text-muted-foreground uppercase tracking-wider"
+    },
+    "instructions": "Use 'Outfit' for all headings to give a modern, geometric, app-like feel. Use 'Manrope' for body text for maximum readability on low-end devices."
+  },
+  "colors": {
+    "primary": {
+      "name": "Life Green",
+      "hex": "#00C853",
+      "tailwind": "bg-[#00C853] text-white hover:bg-[#009624]",
+      "usage": "Main CTAs, Success States, Brand Identity"
+    },
+    "secondary": {
+      "name": "Emergency Amber",
+      "hex": "#FFAB00",
+      "tailwind": "bg-[#FFAB00] text-black hover:bg-[#FF6D00]",
+      "usage": "Emergency Actions, Warnings, High-Visibility Elements"
+    },
+    "accent": {
+      "name": "Trust Blue",
+      "hex": "#2962FF",
+      "tailwind": "bg-[#2962FF] text-white",
+      "usage": "Doctor Profiles, Information Cards, Links"
+    },
+    "neutral": {
+      "background": "#F9FAFB",
+      "surface": "#FFFFFF",
+      "text_primary": "#111827",
+      "text_secondary": "#4B5563",
+      "border": "#E5E7EB"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-r from-[#00C853] to-[#2962FF]",
+      "emergency": "bg-gradient-to-r from-[#FFAB00] to-[#FF6D00]"
+    }
+  },
+  "layout_strategies": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-12 md:py-20",
+    "mobile_first": "Always design for 360px width first. Use bottom sheets for interactions instead of modals on mobile.",
+    "grids": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "cards": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full bg-[#00C853] hover:bg-[#009624] text-white font-bold px-8 py-3 shadow-lg hover:shadow-xl transition-all active:scale-95",
+      "emergency": "rounded-full bg-[#FFAB00] hover:bg-[#FF6D00] text-black font-bold px-8 py-3 shadow-lg hover:shadow-red-200 animate-pulse",
+      "outline": "rounded-full border-2 border-[#00C853] text-[#00C853] hover:bg-[#00C853] hover:text-white px-8 py-3 transition-all"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow",
+      "interactive": "cursor-pointer transform hover:-translate-y-1 transition-all duration-300"
+    },
+    "inputs": {
+      "base": "w-full rounded-xl border-gray-300 focus:border-[#00C853] focus:ring-[#00C853] py-3 px-4 bg-gray-50 focus:bg-white transition-colors"
+    },
+    "navigation": {
+      "mobile_bottom_bar": "fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 flex justify-around py-3 pb-6",
+      "header": "sticky top-0 z-40 w-full backdrop-blur-lg bg-white/80 border-b border-gray-100"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+    "radius": "rounded-2xl",
+    "glassmorphism": "backdrop-blur-md bg-white/70 border border-white/20",
+    "textures": "Use subtle noise overlays on solid color backgrounds to reduce digital flatness."
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1723005315946-4ba11c55de39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjBkb2N0b3IlMjBydXJhbCUyMHZpbGxhZ2UlMjBwYXRpZW50fGVufDB8fHx8MTc3MDQ3NzUxOXww&ixlib=rb-4.1.0&q=85",
+      "ambulance": "https://images.unsplash.com/photo-1686797366685-6420f4bd9c2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBhbWJ1bGFuY2UlMjBlbWVyZ2VuY3klMjB2YW58ZW58MHx8fHwxNzcwNDc3NTIwfDA&ixlib=rb-4.1.0&q=85",
+      "ai_avatar": "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxmcmllbmRseSUyMDNkJTIwcm9ib3QlMjBkb2N0b3IlMjBtYXNjb3R8ZW58MHx8fHwxNzcwNDc3NTIxfDA&ixlib=rb-4.1.0&q=85",
+      "hospital_default": "https://images.unsplash.com/photo-1697120508416-89675565948d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGJ1aWxkaW5nJTIwaW5kaWElMjBleHRlcmlvcnxlbnwwfHx8fDE3NzA0Nzc1MjJ8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "Use 'lucide-react' for all UI icons. Use filled variants for active states, outlined for inactive."
+  },
+  "page_specifics": {
+    "landing": {
+      "hero_style": "Split screen: Left text, Right 3D/Image. Use 'Emergency Amber' for the 'Call Ambulance' CTA in the nav.",
+      "features_grid": "Bento grid style with colorful backgrounds for each feature card."
+    },
+    "hospital_finder": {
+      "layout": "Full screen map with a floating bottom sheet (z-index 50) for hospital list. Map pins should be custom markers.",
+      "card_style": "Compact horizontal cards with 'Distance' and 'Time' highlighted in green."
+    },
+    "ai_chat": {
+      "interface": "WhatsApp-style chat interface. Friendly, colorful bubbles. User: #E0F2F1 (Light Teal), AI: #FFFFFF (White).",
+      "input_area": "Floating pill-shaped input bar at the bottom."
+    }
+  },
+  "animations": {
+    "page_transition": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg transition-all duration-300",
+    "pulse_emergency": "animate-pulse"
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons.",
+    "Use 'framer-motion' for all page transitions and micro-interactions.",
+    "Ensure the map component (e.g., react-leaflet or google-maps-react) takes full height on the Hospital Finder page.",
+    "Implement the 'Emergency Ambulance' button as a slide-to-act or long-press to prevent accidental clicks, but make it visually distinct.",
+    "For the Multilingual AI, use a dropdown to select languages (Tamil, Hindi, English, etc.) prominently in the chat header.",
+    "Use the provided image URLs for placeholders. Do not leave empty src attributes.",
+    "ALL interactive elements must have a data-testid attribute.",
+    "Follow the Mobile-First approach strictly. Test layouts on 360px width."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; }.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠 etc for icons. Use Lucide icons.",
+    "Every interaction needs micro-animations - hover states, transitions, entrance animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports.",
+    "Pages MUST use default exports.",
+    "Use 'sonner' for toasts."
+  ]
+}
