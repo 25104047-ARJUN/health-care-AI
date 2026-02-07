@@ -1,34 +1,37 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* CareLens AI Global Styles */
+
+.gradient-text {
+  background: linear-gradient(135deg, #00C853, #2962FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.hero-gradient {
+  background: linear-gradient(135deg, #E8F5E9 0%, #E3F2FD 50%, #FFF8E1 100%);
 }
 
-.App-link {
-    color: #61dafb;
+.emergency-gradient {
+  background: linear-gradient(135deg, #FFAB00, #FF6D00);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Leaflet map overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+/* Hide leaflet attribution on small screens */
+@media (max-width: 640px) {
+  .leaflet-control-attribution {
+    display: none;
+  }
 }
