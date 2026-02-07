@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth, API } from "@/App";
 import axios from "axios";
-import { Heart, ArrowLeft, Save, Stethoscope, MapPin, Phone, Globe, Clock, IndianRupee, Check, Edit2 } from "lucide-react";
+import { Heart, ArrowLeft, Save, Stethoscope, MapPin, Phone, Globe, Clock, IndianRupee, Check, Edit2, Loader2 } from "lucide-react";
 
 const SPECIALIZATIONS = [
   "General Medicine", "Cardiology", "Orthopedics", "Pediatrics", "Gynecology",
@@ -329,8 +329,5 @@ const DoctorPortal = () => {
     </div>
   );
 };
-
-// Missing import
-import { Loader2 } from "lucide-react";
 
 export default DoctorPortal;
